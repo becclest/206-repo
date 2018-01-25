@@ -1,0 +1,9 @@
+class TestCard (unittest.TestCase):
+    def test_init(self):
+        c1 = Card (0,1)
+        c2 = Card (2, 11)
+
+        self.assertEqual(c1.suit, "Diamonds")
+        self.assertEqual(c1.rank_num, 1)
+        self.assertEqual(c2.suit, "Hearts")
+        self.assertEqual(c1.rank_num, 11)
